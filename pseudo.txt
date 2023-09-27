@@ -1,0 +1,42 @@
+
+initialize boolean as true to "play RPS"
+
+while we "play RPS"
+    *Ask user which choice (R, P, S) they wish to play in a text box.
+
+    Generate random choice (R, P, S) on computer's behalf.
+        *Create an array of R, P, S 
+        *Randomly select value from that array
+
+    Compare user's choice against the computer's choice
+        R > S 
+        S > P 
+        P > R
+        if user chose rock
+            test if computer chose paper
+            if not, user wins
+        
+        if user chose scissors
+            test if computer chose rock
+            if not, user wins
+
+        if user chose paper
+            test if computer chose scissors
+            if not, user wins
+
+    Inform user if they won or lost
+        if user won
+            array[0]++
+
+        if user lost...
+
+    Display win/lose/tie stats
+        create an array of [#, #, #]
+        when we want to display stats
+            array[0] = wins
+            array[1] = losses
+            array[2] = ties
+
+    Ask if they want to play again
+        confirm() user choice
+        check output, if not, we are not playing RPS
